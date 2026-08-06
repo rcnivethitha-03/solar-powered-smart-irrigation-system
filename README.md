@@ -6,23 +6,23 @@ An ESP32-based smart irrigation system that automates irrigation using real-time
 
 ## 📌 Overview
 
-Water scarcity and inefficient irrigation practices are major challenges in modern agriculture. This project presents a **Solar-Powered IoT Smart Irrigation System** that automatically irrigates crops based on real-time soil moisture conditions while allowing users to remotely monitor and control the system through the **Blynk IoT platform**.
+The **Solar-Powered IoT Smart Irrigation System** is designed to improve agricultural irrigation by automatically watering crops based on real-time soil moisture conditions. The system continuously monitors soil moisture, water flow, and tank water levels while enabling remote monitoring and manual control through the **Blynk IoT platform**.
 
-The system combines renewable energy with embedded systems and IoT technologies to provide an energy-efficient, autonomous, and sustainable irrigation solution suitable for farms and remote agricultural environments.
+Powered by a **solar panel**, **MPPT charge controller**, and **rechargeable battery**, the system provides an energy-efficient and sustainable irrigation solution suitable for farms and remote agricultural environments.
 
 ---
 
 ## ✨ Features
 
 - 🌱 Automatic irrigation based on soil moisture
-- ☀️ Solar-powered operation with MPPT charging
+- ☀️ Solar-powered operation using MPPT charging
 - 💧 Real-time water flow monitoring
 - 🚰 Automatic water tank level monitoring
-- 📱 Remote monitoring and manual control using Blynk IoT
-- ⚡ ESP32-based embedded control
+- 📱 Remote monitoring and manual control through Blynk IoT
+- ⚡ ESP32-based embedded control system
 - 🔔 Low water level alert
 - 🔄 Relay-controlled pump automation
-- 📊 Live sensor data visualization
+- 📊 Live sensor monitoring
 
 ---
 
@@ -46,27 +46,27 @@ The system combines renewable energy with embedded systems and IoT technologies 
 
 - Arduino IDE
 - Embedded C++
-- Blynk IoT Platform
 - ESP32 Wi-Fi Library
+- Blynk IoT Platform
 
 ---
 
 ## ⚙ Working Principle
 
-1. The soil moisture sensor continuously monitors the moisture content of the soil.
-2. If the moisture level falls below the predefined threshold, the ESP32 automatically activates the irrigation pump.
+1. The soil moisture sensor continuously measures the moisture level of the soil.
+2. When the moisture level falls below a predefined threshold, the ESP32 automatically switches ON the irrigation pump.
 3. The water flow sensor measures the amount of water supplied during irrigation.
-4. The float sensor continuously monitors the storage tank water level.
-5. When the water level becomes low, the refill pump is activated automatically.
-6. The entire system is powered using a solar panel, MPPT charge controller, and rechargeable battery.
-7. Users can monitor sensor readings and control the system remotely through the Blynk mobile application.
+4. The float sensor monitors the storage tank level.
+5. If the tank level becomes low, the refill pump is activated automatically.
+6. The complete system is powered using a solar panel with MPPT charging and a rechargeable battery.
+7. Users can remotely monitor sensor values and control the system through the Blynk mobile application.
 
 ---
 
 # 📷 Hardware Prototype
 
 <p align="center">
-<img src="images/Hardware.png" width="650">
+  <img src="images/Hardware.png" width="650">
 </p>
 
 ---
@@ -74,8 +74,8 @@ The system combines renewable energy with embedded systems and IoT technologies 
 # 📱 Blynk Dashboard
 
 <p align="center">
-<img src="images/Blynk1.png" width="300">
-<img src="images/Blynk2.png" width="300">
+  <img src="images/Blynk1.png" width="250">
+  <img src="images/Blynk2.png" width="250">
 </p>
 
 ---
@@ -84,28 +84,44 @@ The system combines renewable energy with embedded systems and IoT technologies 
 
 The developed prototype successfully demonstrated:
 
-- Automatic irrigation based on soil moisture
-- Reliable water flow monitoring
+- Automatic irrigation based on soil moisture levels
+- Real-time water flow monitoring
 - Autonomous water tank refilling
 - Stable solar-powered operation
-- Real-time IoT monitoring through Blynk
+- Remote monitoring and control through Blynk IoT
 - Improved water-use efficiency with minimal human intervention
 
 ---
 
 ## 📂 Repository Structure
 
-```
+```text
 solar-powered-smart-irrigation-system
 │
+├── README.md
 ├── Smart_Irrigation.ino
 ├── smart_irrigation_report.pdf
-├── README.md
 └── images/
     ├── Hardware.png
     ├── Blynk1.png
-    ├── Blynk2.png
+    └── Blynk2.png
 ```
+
+---
+
+## 💻 Source Code
+
+The complete ESP32 Arduino program used in this project can be accessed here:
+
+➡️ **[Smart_Irrigation.ino](Smart_Irrigation.ino)**
+
+---
+
+## 📄 Project Report
+
+A detailed report explaining the system design, implementation, hardware setup, and experimental results is available here:
+
+➡️ **[Smart Irrigation Project Report](smart_irrigation_report.pdf)**
 
 ---
 
@@ -113,19 +129,11 @@ solar-powered-smart-irrigation-system
 
 - AI-based irrigation prediction
 - Weather forecast integration
-- Cloud database support
+- Cloud database storage
 - Mobile notifications
 - Crop-specific irrigation scheduling
-- Water consumption analytics
 - Machine learning for irrigation optimization
-
----
-
-## 📄 Project Report
-
-A detailed project report describing the system design, implementation, and experimental evaluation is included in this repository.
-
-📄 **smart_irrigation_report.pdf**
+- Water consumption analytics
 
 ---
 
@@ -136,3 +144,6 @@ A detailed project report describing the system design, implementation, and expe
 Electrical and Electronics Engineering Graduate
 
 
+## ⭐ Support
+
+If you found this project useful, consider giving this repository a **Star ⭐**.
